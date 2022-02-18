@@ -1,0 +1,19 @@
+name: lh-plugin-demo
+version: 0.1.0.0
+license: MIT
+author: "Ranjit Jhala"
+maintainer: "jhala@cs.ucsd.edu"
+copyright: "2020 Ranjit Jhala"
+description: This toy package demonstrates the use of LH as a plugin.
+
+dependencies:
+  - liquid-ghc-prim
+  - liquid-base
+  - liquid-prelude
+  - liquidhaskell
+
+ghc-options:
+  - -fplugin=LiquidHaskell
+
+library:
+  source-dirs: src
